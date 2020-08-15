@@ -58,15 +58,16 @@ def hit?(card_sum)
   input = get_user_input
   card = card_sum
  
- until  
-  if input == 's'
-    #do nothing 
-  elsif input == 'h'
-    card = card_sum + card 
-  else
-    invalid_command
-    prompt_user
-    input = get_user_input
+  until input == "h" || input == "s" do 
+    if input == 's'
+      #do nothing 
+    elsif input == 'h'
+      card = card_sum + card 
+    else
+      invalid_command
+      prompt_user
+      input = get_user_input
+    end
   end
   
   display_card_total(card)
