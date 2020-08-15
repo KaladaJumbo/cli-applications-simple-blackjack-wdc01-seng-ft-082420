@@ -88,7 +88,7 @@ def runner
   
   welcome
   hand  = initial_round
-  input == ""
+  input = ""
   while input != "h"
     prompt_user
     input = get_user_input
