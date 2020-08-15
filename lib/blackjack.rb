@@ -57,7 +57,8 @@ def hit?(card_sum)
   prompt_user
   input = get_user_input
   card = card_sum
-  
+ 
+ until  
   if input == 's'
     #do nothing 
   elsif input == 'h'
@@ -65,6 +66,7 @@ def hit?(card_sum)
   else
     invalid_command
     prompt_user
+    input = get_user_input
   end
   
   display_card_total(card)
