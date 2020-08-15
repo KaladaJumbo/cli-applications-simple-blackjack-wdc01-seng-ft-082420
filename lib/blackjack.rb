@@ -94,7 +94,7 @@ def runner
     input = get_user_input
   end
   
-  while hand < 21
+  while hand <= 21
    hand = hit?(hand)
   end 
   
