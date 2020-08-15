@@ -60,7 +60,6 @@ def hit?(card_sum)
   input = get_user_input
   card = card_sum
  
-  until input == "h" || input == "s" do 
     if input == 's'
       #do nothing 
     elsif input == 'h'
@@ -80,9 +79,10 @@ def hit?(card_sum)
           input = get_user_input
         end
       end
+      
     end
     binding.pry
-  end
+
   
   display_card_total(card)
   return card
