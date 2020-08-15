@@ -29,13 +29,15 @@ end
 def get_user_input
   # code #get_user_input here
   
-  input = gets.chomp
-  return 
+  return gets.chomp
   
 end
 
 def end_game
   # code #end_game here
+  
+  puts 
+  
 end
 
 def initial_round
