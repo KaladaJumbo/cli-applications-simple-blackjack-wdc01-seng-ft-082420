@@ -36,12 +36,16 @@ end
 def end_game
   # code #end_game here
   
-  puts 
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
   
 end
 
 def initial_round
   # code #initial_round here
+  
+  sum =  deal_card +
+  deal_card
+  
 end
 
 def hit?
