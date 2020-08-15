@@ -98,9 +98,7 @@ def runner
    hand = hit?(hand)
   end 
   
-  if hand > 21
     end_game(hand)
-  end
      
   
 end
