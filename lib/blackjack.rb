@@ -79,10 +79,7 @@ def hit?(card_sum)
         card = deal_card + card
       end
     end
-    
-
   
-  display_card_total(card)
   return card
   
 end
@@ -106,8 +103,10 @@ def runner
   sum = initial_round
   until sum > 21 do 
     sum = hit?(sum)
+    display_card_total(sum)
+  end
   
-
+  end_game
   
 end
     
