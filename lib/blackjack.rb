@@ -88,11 +88,20 @@ def runner
   
   welcome
   hand  = initial_round
+  input == ""
+  while input != "h"
+    prompt_user
+    input = get_user_input
+  end
+  
   while hand < 21
    hand = hit?(hand)
-   if hand >
-    
+  end 
   
+  if hand > 21
+    end_game(hand)
+  end
+     
   
 end
     
