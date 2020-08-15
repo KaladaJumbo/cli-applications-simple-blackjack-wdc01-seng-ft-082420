@@ -15,12 +15,15 @@ end
 def display_card_total(num)
   # code #display_card_total here
   
-  puts 
+  puts "Your cards add up to #{num}"
   
 end
 
 def prompt_user
   # code #prompt_user here
+  
+  puts ""
+  
 end
 
 def get_user_input
