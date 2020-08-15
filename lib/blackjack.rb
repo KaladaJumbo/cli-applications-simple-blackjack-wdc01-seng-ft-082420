@@ -80,7 +80,6 @@ def hit?(card_sum)
       end
     end
     
-    binding.pry
 
   
   display_card_total(card)
@@ -99,7 +98,7 @@ end
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
-binding.pry 
+#binding.pry 
 def runner
   # code runner here
   
