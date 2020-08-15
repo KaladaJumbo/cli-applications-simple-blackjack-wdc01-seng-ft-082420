@@ -77,6 +77,7 @@ def hit?(card_sum)
           invalid_command
           prompt_user
           input = get_user_input
+          
         end
       end
     end
