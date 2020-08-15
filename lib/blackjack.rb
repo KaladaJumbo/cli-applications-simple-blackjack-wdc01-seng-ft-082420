@@ -63,7 +63,7 @@ def hit?(card_sum)
   elsif ans == "s"
     display_card_total(sum)
   else 
-    invalid_command
+    invalid_command(sum)
   end
   
   return sum 
@@ -73,7 +73,8 @@ end
 def invalid_command
   # code invalid_command here
   
-  puts 
+  puts "Please enter a valid command"
+  
   
 end
 
