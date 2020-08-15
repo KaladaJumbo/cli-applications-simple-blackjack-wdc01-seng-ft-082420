@@ -79,9 +79,9 @@ def hit?(card_sum)
           input = get_user_input
         end
       end
-      binding.pry
     end
     
+    binding.pry
 
   
   display_card_total(card)
