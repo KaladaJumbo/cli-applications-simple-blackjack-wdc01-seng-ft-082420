@@ -54,20 +54,21 @@ end
 def hit?(card_sum)
   # code hit? here
   
-  prompt_user 
-  ans = get_user_input
-  sum = card_sum
-  if ans == "h"
+  prompt_user
+  input = get_user_input
+  
+  if input == 's'
+    #do nothing 
+  elsif input == 'h'
     card = deal_card
-    sum = card_sum + card
-    display_card_total(sum)
-  elsif ans == "s"
-    display_card_total(sum)
-  else 
-    invalid_command(sum)
+    card = card_sum + card 
+  else
+    invalid_command
+    prompt_user
   end
   
-  return sum 
+  display_card_total(card)
+  return card
   
 end
 
@@ -86,20 +87,7 @@ end
 def runner
   # code runner here
   
-  welcome
-  hand  = initial_round
-  input = ""
-  while input != "h"
-    prompt_user
-    input = get_user_input
-  end
-  
-  while hand <= 21
-   hand = hit?(hand)
-  end 
-  
-    end_game(hand)
-     
+
   
 end
     
