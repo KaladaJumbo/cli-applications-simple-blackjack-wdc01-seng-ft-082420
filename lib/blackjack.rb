@@ -56,6 +56,7 @@ def hit?(card_sum)
   
   prompt_user 
   ans = get_user_input
+  sum = card_sum
   if ans == "h"
     card = deal_card
     sum = card_sum + card
