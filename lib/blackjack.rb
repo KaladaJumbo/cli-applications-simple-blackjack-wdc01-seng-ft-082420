@@ -64,7 +64,7 @@ def hit?(card_sum)
     if input == 's'
       #do nothing 
     elsif input == 'h'
-      card = card_sum + card 
+      card = deal_card + card 
     else
       invalid_command
       prompt_user
@@ -73,7 +73,7 @@ def hit?(card_sum)
         if input == 's'
           #do nothing 
         elsif input == 'h'
-          card = card_sum + card 
+          card = deal_card + card
         else
           invalid_command
           prompt_user
