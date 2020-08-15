@@ -54,10 +54,14 @@ end
 def hit?(card_sum)
   # code hit? here
   
-  if prompt_user 
-  card = deal_card
-  sum = card_sum + card
-  display_card_total(sum)
+  prompt_user 
+  ans = get_user_input
+  if ans == "h"
+    card = deal_card
+    sum = card_sum + card
+    display_card_total(sum)
+  elsif ans == "s"
+    
   
   return sum 
   
