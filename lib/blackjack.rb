@@ -75,7 +75,7 @@ def hit?(card_sum)
         end
         if input == 's'
           #do nothing 
-        elsif input == 'h'
+        else input == 'h'
           card = deal_card + card
         end
       end
