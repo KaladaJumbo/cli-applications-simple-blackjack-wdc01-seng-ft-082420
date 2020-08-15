@@ -74,6 +74,7 @@ def invalid_command
   # code invalid_command here
   
   puts "Please enter a valid command"
+  prompt_user
   
   
 end
@@ -84,5 +85,14 @@ end
 
 def runner
   # code runner here
+  
+  welcome
+  hand  = initial_round
+  while hand < 21
+   hand = hit?(hand)
+   if hand >
+    
+  
+  
 end
     
