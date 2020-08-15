@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   # code #welcome here
   
@@ -97,7 +99,7 @@ end
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
-
+binding.pry 
 def runner
   # code runner here
   
