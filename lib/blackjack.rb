@@ -76,6 +76,11 @@ def invalid_command
   
   puts "Please enter a valid command"
   prompt_user
+  input = get_user_input
+  while input != "h" || input != "s"
+    prompt_user
+    input = get_user_input
+  end
   
   
 end
