@@ -81,6 +81,7 @@ def hit?(card_sum)
         end
       end
     end
+    binding.pry
   end
   
   display_card_total(card)
